@@ -238,7 +238,6 @@ const InputForm = () => {
 
   }
   const changeHandler1 = (event) => {
-    // counter1++;
     plaintext = event.target.value;
     counter1 = plaintext.length;
     plaintext = plaintext.toString().split("")
@@ -249,7 +248,6 @@ const InputForm = () => {
     document.getElementById("lblCount1").textContent = counter1;
   }
   const changeHandler2 = (event) => {
-    // counter2++;
     keyVal = event.target.value;
     counter2 = keyVal.length;
     keyVal = keyVal.toString().split("")

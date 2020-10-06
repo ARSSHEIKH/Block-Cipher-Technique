@@ -20,3 +20,14 @@ input{
   color: green;
   font-weight: bold;
 }
+.Footer{
+  margin-top: 150px;
+ 
+}
+ol{
+ 
+  border: 1px solid grey
+}
+ol > li{
+  display: block;
+}
