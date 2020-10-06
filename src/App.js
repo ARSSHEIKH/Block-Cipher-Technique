@@ -12,7 +12,7 @@ function App() {
         <h3>
           Assignment Created By:
         </h3>
-        
+        <ul>
           <li>
             1. Muhammad Arsalan 2018-CS-203
           </li>
@@ -22,7 +22,7 @@ function App() {
           <li>
             3. Waqas Ahmed 2018-CS-231
           </li>
-        
+        </ul>
       </div>
     </div>
   );
