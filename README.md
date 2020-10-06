@@ -1,7 +1,9 @@
 # BLock Cipher technique
 ## url : http://ars-blockciphertechnique.surge.sh/
 ###  created by:
-
+      Muhammad Arsalan Irshad 2018 - CS - 203
+      Rumail Ansari 2018 - CS - 280
+      Waqas Ahmed Siddiqui 2018 - CS - 231
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
