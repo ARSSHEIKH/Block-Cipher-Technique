@@ -1,12 +1,18 @@
-# BLock Cipher technique
-## url : http://ars-blockciphertechnique.surge.sh/
-###  created by:
- ###
-     `
+# ASSIGNMENT 2
+## BLock Cipher technique
+### url : http://ars-blockciphertechnique.surge.sh/
+####  created by:
+     
       Muhammad Arsalan Irshad       2018 - CS - 203
       Rumail Ansari                 2018 - CS - 280
       Waqas Ahmed Siddiqui          2018 - CS - 231
-      `
+
+## ASSIGNMENT 1:
+     url : http://ars-encryptiontechnique.surge.sh/
+     Github repo url : https://github.com/ARSSHEIKH/cipher-encryp-decryp-technique
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
