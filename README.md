@@ -8,8 +8,9 @@
       Waqas Ahmed Siddiqui          2018 - CS - 231
 
 ## ASSIGNMENT 1:
-     url : http://ars-encryptiontechnique.surge.sh/ (http://ars-encryptiontechnique.surge.sh/)
-     [Github repo url : https://github.com/ARSSHEIKH/cipher-encryp-decryp-technique] (https://github.com/ARSSHEIKH/cipher-encryp-decryp-technique)
+
+url : http://ars-encryptiontechnique.surge.sh/ (http://ars-encryptiontechnique.surge.sh/)
+[Github repo url : https://github.com/ARSSHEIKH/cipher-encryp-decryp-technique] (https://github.com/ARSSHEIKH/cipher-encryp-decryp-technique)
 
 
 
