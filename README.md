@@ -9,11 +9,13 @@
 
 ## ASSIGNMENT 1:
 
-url : http://ars-encryptiontechnique.surge.sh/ (http://ars-encryptiontechnique.surge.sh/)
-[Github repo url : https://github.com/ARSSHEIKH/cipher-encryp-decryp-technique] (https://github.com/ARSSHEIKH/cipher-encryp-decryp-technique)
+### url : http://ars-encryptiontechnique.surge.sh/
+### Github repo url : https://github.com/ARSSHEIKH/cipher-encryp-decryp-technique
 
 
 
+                              
+#
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
