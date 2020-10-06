@@ -122,7 +122,7 @@ function findKey1(keyVal) {
 
 }
 function findKey2(keyVal) {
-  let key2  
+  let key2
   keyVal = permutateKey_8(keyVal);
   key2 = permutateKey_8_Key1(keyVal);
   document.getElementById("lblkey3").textContent = `Key2 after 2 LS is : ` + (key2.join(" "))
@@ -130,23 +130,23 @@ function findKey2(keyVal) {
   return key2
 
 }
-function leftSidePart(value, mid){
+function leftSidePart(value, mid) {
   let leftpermut = [];
   for (let i = 0; i < (value.length) / 2; i++) {
     leftpermut[i] = value[i];
   }
   return leftpermut
 }
-function rightSidePart(value, mid){
+function rightSidePart(value, mid) {
   let rightpermut = [];
   let j = 0
-    for (let i = mid; i < value.length; i++) {
-      rightpermut[j] = value[i];
-      j++;
-    }
+  for (let i = mid; i < value.length; i++) {
+    rightpermut[j] = value[i];
+    j++;
+  }
   return rightpermut
 }
-function breaking_PT_into_TwoParts(value){
+function breaking_PT_into_TwoParts(value) {
   let mid = value.length / 2;
 
   leftSidePart(value, mid);
@@ -157,8 +157,8 @@ function breaking_PT_into_TwoParts(value){
   return exp_permut;
 
 }
-function expansionPermut(rightpermut){
-  let permut=[8]
+function expansionPermut(rightpermut) {
+  let permut = [8]
   // rightside pass into EP as 4 1 2 3 2 3 4 1
   // but the index of array will start from 0
   // so therfore 3 0 1 2 1 2 3 0
@@ -173,15 +173,15 @@ function expansionPermut(rightpermut){
   console.log("permut: ", permut);
 
   return permut;
-  
+
 }
-function XOR_Operation(exp_permut, key1){
+function XOR_Operation(exp_permut, key1) {
   let s = []
-  for(let i =0; i < 8; i++){
-    if(exp_permut[i] == key1[i]){
+  for (let i = 0; i < 8; i++) {
+    if (exp_permut[i] == key1[i]) {
       s[i] = 0;
     }
-    else{
+    else {
       s[i] = 1;
     }
   }
@@ -189,8 +189,8 @@ function XOR_Operation(exp_permut, key1){
   console.log("s:", s);
 }
 
-function initialPermut(ip_plaintext, key1){
-  let permut=[8]
+function initialPermut(ip_plaintext, key1) {
+  let permut = [8]
   permut[0] = ip_plaintext[1];
   permut[1] = ip_plaintext[5];
   permut[2] = ip_plaintext[2];
@@ -206,29 +206,29 @@ function initialPermut(ip_plaintext, key1){
   let s1 = rightSidePart(s, 4);
   console.log(s0);
   console.log(s1);
-  
+
   document.getElementById("lblPlainText1").textContent = `PlainText after IP is : ` + permut.join(" ")
   document.getElementById("lblPlainText2").textContent = `PlainText after EP is : ` + exp_permut.join(" ")
   document.getElementById("lblPlainText3").textContent = `PlainText after XOR S0 is : ` + s0.join(" ")
- document.getElementById("lblPlainText4").textContent = `PlainText after XOR S1 is : ` + s1.join(" ")
+  document.getElementById("lblPlainText4").textContent = `PlainText after XOR S1 is : ` + s1.join(" ")
 }
 function forPlainText(plaintext, key1) {
-  
+
   initialPermut(plaintext, key1);
 }
 const InputForm = () => {
   let counter1 = 0, counter2 = 0;
   let keyVal, plaintext
   const submit = (e) => {
-    if(counter1 === 8 && counter2 === 10){
+    if (counter1 === 8 && counter2 === 10) {
       keyVal = permutateKey_10(keyVal);
       document.getElementById("lblkey1").textContent = `Key after P10 is : ` + keyVal.join(" ")
-  
+
       let key1 = findKey1(keyVal);
       let key2 = findKey2(keyVal);
 
-      console.log("key1 : " , key1);
-      console.log("key2 : " , key2);
+      console.log("key1 : ", key1);
+      console.log("key2 : ", key2);
 
       forPlainText(plaintext, key1);
     }
@@ -242,22 +242,29 @@ const InputForm = () => {
     counter1 = plaintext.length;
     plaintext = plaintext.toString().split("")
     console.log(plaintext);
-    if(counter1 > 10){
-      document.getElementById("lblCount1").style.color="red";
+    if (counter1 != 8) {
+      document.getElementById("lblCount1").style.color = "red";
+    }
+    else {
+      document.getElementById("lblCount1").style.color = "green";
     }
     document.getElementById("lblCount1").textContent = counter1;
   }
   const changeHandler2 = (event) => {
+
     keyVal = event.target.value;
     counter2 = keyVal.length;
     keyVal = keyVal.toString().split("")
-    if(counter2 > 10){
-      document.getElementById("lblCount2").style.color="red";
+    if (counter2 != 10) {
+      document.getElementById("lblCount2").style.color = "red";
     }
-
+    else {
+      document.getElementById("lblCount2").style.color = "green";
+    }
     document.getElementById("lblCount2").textContent = counter2;
-
   }
+
+
   let val;
   return (
     <div className="">
@@ -271,9 +278,10 @@ const InputForm = () => {
 
       <input className="inpBtn" type="submit" onClick={submit} />
       <br />
+
       <label id="lblkey1"></label><br />
       <label id="lblkey2"></label><br />
-      <label id="lblkey3"></label><br />
+      <label id="lblkey3"></label><br /><br />
 
       <label id="lblPlainText1"></label><br />
       <label id="lblPlainText2"></label><br />
