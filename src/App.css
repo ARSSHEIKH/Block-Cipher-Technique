@@ -10,6 +10,9 @@
   border-color: transparent;
   border-bottom: 1px solid grey;
 }
+.inpText:focus{
+  border-color: transparent;
+}
 input{
   padding: 20px;
   margin: 0 0 4px 0;
@@ -19,11 +22,14 @@ input{
   padding-left: 45px;
   padding-right: 45px;
 }
-#lblPlainText2{
-  border-bottom: 1px solid grey;
-}
+
 #lblkey3{
-  border-bottom: 2px solid #000;;
+  border-bottom: 2px solid #000;
+}
+#lblCipherText{
+  border-bottom: 2px solid #000;
+  background-color: rgb(150, 142, 142);
+  font-weight: bold;
 }
 #lblCount1, #lblCount2{
   margin-left: 5px;
@@ -31,13 +37,13 @@ input{
   font-weight: bold;
 }
 .Footer{
-  margin-top: 80px;
+  margin-top: -10px;
  
 }
 ul{
   padding: 0;
   background-color: rgb(219, 214, 214);
-  box-shadow: 0 0 10px rgb(230, 226, 226);
+  box-shadow: 0 0 10px rgb(7, 7, 7);
   margin: 0
 }
 li{
