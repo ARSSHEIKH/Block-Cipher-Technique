@@ -1,5 +1,5 @@
 import React from 'react';
-import InputForm from './inputForm';
+import InputForm from './Components/inputForm';
 import './App.css';
 
 function App() {
